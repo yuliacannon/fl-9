@@ -1,0 +1,176 @@
+/* 1) print version*/
+@media print{
+  .tm-sidebar, section:not(:first-of-type), #about{
+    display: none;
+  }
+
+  .tm-main-content{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tm-banner{
+    height: 240px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2.tm-section-title{
+    color: blue;
+  }
+
+  .flex-2-col {
+        flex-direction: column;
+        margin-bottom: 20px;
+        visibility: visible;  }
+
+  .pad{
+      padding: 0px;
+    }
+
+  .tm-team-description-container{
+    max-width: 100%;
+    margin: 0px;
+    padding-left: 40px;
+  }
+
+  .flex-item{
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+@media screen {
+
+/* 2) rounded images and hoover effect */
+  .thumbnail{
+    border-radius: 50%;
+  }
+
+  .box-bg:hover{
+    background-color: #76cdd7;
+  }
+
+  .tm-box-bg-title:hover{
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+/* 3) blue colour of first letter in p and size */
+  p::first-letter{
+    color:#76cdd7;
+    font-size: 30px;
+  }
+
+/* 4) shadow of sidebar and content box */
+  .tm-content-box,
+  .tm-sidebar
+{
+    box-shadow: 0px 0px 20px 0px rgba(209,201,209,1);
+  }
+
+/* 5) triangle in corner */
+  .tm-content-box{
+    position: relative;
+  }
+  .tm-content-box:not(:empty)::before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 0;
+    height: 0;
+    border-style: solid ;
+    border-width: 30px 120px 0  0;
+    border-color: #62cdd9 transparent;
+    z-index: 3;
+  }
+
+  .tm-content-box.flex-2-col:nth-child(2)::before{
+        display: none;
+    }
+
+/* 6) How we do it */
+  .carousel-item .tm-section-title{
+    color: gainsboro;
+    letter-spacing: 5px;
+  }
+
+/* 7) p after h2*/
+  h2+p{
+    font-style: italic;
+  }
+
+/* 8) space before p*/
+  p:not(.tm-banner-text){
+    line-height: 200%;
+    text-indent: 20px;
+  }
+
+/* 9) links styles*/
+  .pad ol li a:visited{
+    color: silver;
+  }
+
+  .pad ol li a{
+    color: black;
+  }
+
+  .pad ol li a:hover{
+    color: #76cdd7;
+    text-decoration: underline double;
+  }
+
+  .text::after{
+    content: "New";
+    color: red;
+    vertical-align: super;
+    font-size: 10px;
+  }
+
+  .pad h2{
+    text-align: center;
+    color: #76cdd7;
+  }
+
+/* 10) styles for block*/
+  .boxes.gallery-container .box p{
+    text-indent: initial;
+    }
+
+  .boxes.gallery-container .box p::first-letter{
+    color: black;
+  }
+  .blocks .box:nth-of-type(1),
+  .blocks .box:nth-of-type(3),
+  .blocks .box:nth-of-type(5){
+    background-color: #d7dae0;
+  }
+
+/* 11) Sidebar */
+  .tm-nav-item:not(:last-child){
+    border-bottom: #d7dae0 2px dotted;
+  }
+
+/* 12) inputs*/
+  .tm-content-box .pad .tm-section-title{
+    text-align: left;
+    color: red;
+  }
+
+  .mandatory-field::after{
+    content: "*";
+    color: red;
+  }
+
+  .form-group input,.form-group textarea, .btn{
+    color: red;
+  }
+
+  .btn:hover{
+    background-color: #76cdd7;
+    color: white;
+
+  }
+}
