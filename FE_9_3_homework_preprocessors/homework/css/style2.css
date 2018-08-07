@@ -1,0 +1,115 @@
+body {
+  background-color: #efefef;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  color: #757575; }
+  body p {
+    line-height: 1.8em; }
+  body h1, body h3, body h4 {
+    text-transform: uppercase;
+    color: #fc5830; }
+
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative; }
+
+header {
+  position: relative; }
+  header .logo {
+    display: inline-block;
+    width: 40%; }
+    header .logo img {
+      width: 100%; }
+  header nav {
+    position: absolute;
+    top: 158px;
+    display: inline-block;
+    border-top: 1px solid #cfd8dc;
+    border-bottom: 1px solid #cfd8dc;
+    text-transform: uppercase;
+    line-height: 3.5em;
+    width: 60%;
+    text-align: center; }
+    header nav a {
+      text-decoration: none;
+      color: #fc5830;
+      padding: 50px;
+      font-size: 20px; }
+      header nav a:hover {
+        color: #f53304; }
+
+.toolbar {
+  text-align: right;
+  padding-bottom: 30px; }
+  .toolbar input {
+    height: 35px;
+    width: 22%;
+    border: 1px solid #fc5830;
+    background-color: transparent; }
+    .toolbar input::placeholder {
+      color: #fc5830;
+      font-size: 18px;
+      text-indent: 10px; }
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .post-list article {
+    flex: 1 370px;
+    /* Initial width of 600px/2 Grow to fill remaining space */
+    min-width: 0;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    height: 100%; }
+    .post-list article:nth-child(even) {
+      margin-left: 30px; }
+    .post-list article img {
+      width: 100%; }
+    .post-list article div {
+      padding: 5px; }
+      .post-list article div h3 {
+        color: #617d8a; }
+
+.post-description {
+  margin-left: 5px;
+  color: #bdbdbd;
+  border-bottom: 1px solid #cfd8dc; }
+
+.about h1 {
+  text-align: right; }
+.about img {
+  width: 100%; }
+
+.contact-form h1, .contact-form h4 {
+  text-align: right;
+  color: #fc5830; }
+.contact-form form {
+  padding-bottom: 60px; }
+  .contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cfd8dc;
+    box-sizing: border-box;
+    background-color: transparent; }
+  .contact-form form button {
+    background-color: #fc5830;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px;
+    width: 200px;
+    position: absolute;
+    right: 0; }
+
+footer {
+  font-size: 13px; }
