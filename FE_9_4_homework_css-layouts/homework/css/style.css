@@ -1,0 +1,312 @@
+body{
+  font-family: "Open Sans";
+  margin: 0px;
+  background-color: #f3f3f3;
+}
+
+header{
+   background: url(../img/apples.jpg) center;
+   height: 740px;
+   color: #fff;
+}
+
+.logo{
+  padding: 40px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  padding: 40px;
+  width: 400px;
+}
+
+header a:link{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+header a:visited{
+  color: #fff;
+}
+
+header a:hover{
+  font-weight: bolder;
+}
+
+header a:active{
+  color: #000;
+}
+
+
+
+
+
+.logo2{
+  text-align: center;
+  margin-top: 150px;
+  font-size: 1.5em;
+}
+
+.logo2 h1{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.logo2 p{
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-top: 0;
+}
+
+#letter{
+  font-size: 2em;
+}
+
+.more{
+  margin-top: 185px;
+  text-align: center;
+}
+
+.more button{
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  color: #fff;
+  background: rgb(0,0,0,0.5);
+  border: 2px solid #fff;
+  transition-duration: 0.4s;
+}
+
+.more button:hover{
+  background: #000;
+}
+
+.more button:active{
+  width: 195px;
+}
+
+.about{
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.about h3{
+  padding: 0 5% 0 40px;
+  width: 100%;
+}
+
+.about p{
+  padding: 0 40px 0 5%;
+}
+
+h3{
+  font-weight: 200;
+  margin: 0;
+}
+
+
+
+.articles h3{
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+
+article{
+  display: flex;
+  padding: 3px 40px 3px 40px;
+  justify-content: space-between;
+}
+
+.picture{
+  z-index: -1;
+  width: 60%;
+  position: relative;
+  /*box-shadow:
+        0 0 200px #000 inset,
+        0 0 150px #000 inset;*/
+  overflow: hidden;
+}
+
+.picture img{
+  height: 100%;
+  width: 100%;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 150px #000 inset,
+                0 0 150px #000 inset;
+    top: 0;
+    left: 0;
+}
+
+.description{
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+
+.bottom-left {
+    bottom: 0px;
+    left: 16px;
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: rgb(0,0,0,0.5);
+    padding: 4px;
+}
+
+.toolbar{
+  display: flex;
+  padding: 30px 20px 30px 20px;
+  margin: 40px;
+  background: #fff;
+  justify-content: space-between;
+}
+
+.toolbar h3{
+  margin: auto;
+}
+
+.toolbar input{
+  border: 1px solid #000;
+  height: 50px;
+  background: #f3f3f3;
+  width: 90%;
+  margin: 0;
+}
+
+.toolbar input::placeholder{
+  color: #000;
+  padding: 5px;
+}
+
+.toolbar button{
+  width: 10%;
+  margin: 0px;
+  height: 54px;
+  color: #fff;
+  background: #000;
+  border: none;
+}
+
+.toolbar form{
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.toolbar h3{
+  float: left;
+  display: inline-block;
+}
+
+.info{
+  background: #fff;
+  padding-top:70px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.info p{
+  font-weight: lighter;
+  font-size: 15px;
+  color: #A4A4A4;
+  margin-bottom: 2px;
+}
+
+.info div{
+  width: 25%;
+  padding-left: 40px;
+}
+
+.contact .time{
+  color: #F3F3F3;
+  padding: 0;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.contact input{
+  border: 1px solid #000;
+  height: 30px;
+  background: #f3f3f3;
+  width: 60%;
+  margin: 0;
+}
+.contact form{
+  display: flex;
+  justify-content: flex-end;
+}
+.contact button{
+  width: 40%;
+  margin: 0px;
+  height: 34px;
+  color: #fff;
+  background: #000;
+  border: none;
+}
+
+.contact button:active{
+  transform: translateY(4px);
+}
+
+.contact input::placeholder{
+  color: #000;
+  padding: 5px;
+}
+
+footer{
+  background: #fff;
+  border-top: 1px solid #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .tm{
+  color: #A4A4A4;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 40px;
+}
+
+footer nav{
+  float: right;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+footer a:link{
+  color: #000;
+  text-decoration: none;
+
+}
+
+footer a:hover{
+  font-weight: bolder;
+}
