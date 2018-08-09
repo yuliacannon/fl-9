@@ -80,7 +80,7 @@ header a:active{
   height: 40px;
   font-size: 15px;
   color: #fff;
-  background: rgb(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
   border: 2px solid #fff;
   transition-duration: 0.4s;
 }
@@ -176,7 +176,7 @@ article{
     right: 16px;
     color: #fff;
     border: 2px solid #fff;
-    background: rgb(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
     padding: 4px;
 }
 
